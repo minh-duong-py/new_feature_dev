@@ -45,7 +45,7 @@
 
                                 <div class="page__main">
                                     <div class="image_wrapper">
-                                        <img src="http://featuredev.local/wp-content/uploads/2024/05/Logo-Horizontal.png" alt="logo">
+                                        <img src="http://featuredev.local/wp-content/uploads/2024/05/primary_logo.png" alt="logo">
                                     </div>
                                     <div class="page__main-heading">
                                         <h1>Pest Management Log</h1>
@@ -60,20 +60,44 @@
                                     <div class="text--special">Integrity</div>
                                     <div class="text--special">Service</div>
                                 </div>
-
-                                <!-- <?php
-                                echo '<pre>';
-                                var_dump($pest_management_data);
-                                echo '</pre>';
-                                ?> -->
                             </div>
                         </div>
                     </div>
 
-                <?php
-                endif;
-                
-                ?>
+                    <div class="section section-pest-management">
+                        <div class="section__inner page-cover"><!-- border: 1px solid #000; padding: 20px; -->
+                            <div class="container">
+                                <div class="page__top">
+                                    <h3><a href="mailto:Admin@wapestconsultants.com.au">Admin@wapestconsultants.com.au</a></h3>
+                                    <h3>Ph: <a href="tel:0499 904 014">0499 904 014</a></h3>
+                                </div>
+
+                                <div class="page__main">
+                                    <div class="image_wrapper">
+                                        <img src="http://featuredev.local/wp-content/uploads/2024/05/primary_logo.png" alt="logo">
+                                    </div>
+                                    <div class="page__main-heading">
+                                        <h1>Pest Management Log</h1>
+                                        <p>September 2023</p>
+
+                                        <div class="text--special">Clarkson Pizza (Clarkson)</div>
+                                    </div>
+                                </div>
+
+                                <div class="page__bottom">
+                                    <div class="text--special">Quality</div>
+                                    <div class="text--special">Integrity</div>
+                                    <div class="text--special">Service</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- <?php
+echo '<pre>';
+var_dump($pest_management_data);
+echo '</pre>';
+?> -->
+                <?php endif; ?>
             </div>
         </div>
         <?php wp_footer(); ?>

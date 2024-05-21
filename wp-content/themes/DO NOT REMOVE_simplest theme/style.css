@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 /* simplest */
-p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset {margin-bottom:1em;}
+p,dl,hr,ol,ul,pre,table,address,fieldset {margin-bottom:1em;}
 li {list-style:square; margin:0.5em 0 0 2em;}
 dt {margin:1em 0; font-weight:bold;}
 dd {margin:0 1em; padding-left:1em; border-left:1px solid #ddd;}
@@ -36,12 +36,12 @@ h2 {font-size:1.3em;}
 h3 {font-size:1.1em;}
 h1 a {text-decoration:none;}
 h1 a:hover {text-decoration:underline;}
-h1,h2,h3,h4,h5,h6 {clear:both;}
+h1,h2,h3,h4,h5,h6 {clear:both; line-height: 1.2em;}
 
 #container {/*width:768px;*/ margin:2em auto;}
 #header #description {margin-top:-1.5em;}
 #header li {display:inline; margin:0 0.5em 0 0;}
-#content {margin-top:4em;}
+#content {margin-block:2em;}
 .hentry, .meta, #respond {margin-bottom:2em; padding-bottom:1em; border-bottom:1px solid #ddd;}
 .hentry h2, .hentry h3, .hentry h4 {margin-top:2em;}
 
@@ -74,9 +74,33 @@ h1,h2,h3,h4,h5,h6 {clear:both;}
 #comments li.comment #respond h3 {padding-top:2em; border-top:1px solid #ddd;}
 #comments li.comment #respond #cancel-comment-reply-link {font-size:0.7em; margin-left:1em;}
 
+@font-face {
+    font-family: 'Brush Script';
+    src: 
+        url('./assets/fonts/Brush_Script.woff2') format('woff2'),
+        url('./assets/fonts/Brush_Script.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --clr-primary: #ff4242;
+}
+
+#content {
+    padding-block: 2em;
+    background-color: #919191;
+}
+
+h1 {
+    font-size: 40px;
+}
+
 /* Portal */
 .section {
     padding-inline: 5vw;
+    margin-block: 1em;
 }
 
 .container {
@@ -87,15 +111,37 @@ h1,h2,h3,h4,h5,h6 {clear:both;}
 
 .section-pest-management .section__inner {
     border: 1px solid #000;
-    padding: 20px;
+    padding: 40px 60px;
+    background-color: #fff;
 }
 
 .section-pest-management .page__top,
+.section-pest-management .page__main,
 .section-pest-management .page__bottom {
     display: flex;
     justify-content: space-between;
 }
 
 .section-pest-management .text--special {
-    font-family: 'Brush Script Std';
+    font-family: 'Brush Script';
 }
+
+.section-pest-management .page__main {
+    padding-block: 150px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-pest-management .page__main img {
+    width: 50vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.section-pest-management .page__main .text--special {
+    font-size: 26px;
+    color: var(--clr-primary);
+    margin-top: 20px;
+} 
