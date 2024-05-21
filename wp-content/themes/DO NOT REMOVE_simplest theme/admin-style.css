@@ -1,0 +1,91 @@
+/* Tabs */
+#repeater-tabs {
+    display: inline-block;
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
+#repeater-tabs .ui-tabs-nav {
+    padding-left: 44px;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+}
+
+#repeater-tabs .ui-tabs-panel {
+    padding-inline: 0;
+}
+
+#repeater-tabs .ui-tabs-tab {
+    margin-inline: .25em;
+}
+
+#repeater-tabs .ui-tabs-anchor {
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    background: #e5e5e5;
+    padding: 5px 10px;
+}
+
+#repeater-tabs .ui-tabs-anchor:hover {
+    background: #fff;
+}
+
+#repeater-tabs .ui-tabs-active {
+    border-width: 1px 1px 0;
+    border-color: #ccc;
+    background: transparent;
+}
+
+#repeater-tabs .ui-tabs-active .ui-tabs-anchor {
+    padding-bottom: 6px;
+    margin-bottom: -1px;
+    background: #f1f1f1;
+    border-bottom-width: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+#repeater-tabs .ui-tabs-anchor:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#repeater-tabs .button[data-event=add-row] {
+    display: block;
+    width: max-content;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.repeater__wrapper {
+    border-collapse: collapse;
+    background-color: #fff;
+}
+.repeater__wrapper th,
+.repeater__wrapper td {
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    text-align: center;
+}
+
+.repeater__wrapper .repeater-td-handle {
+    background-color: #f9f9f9;
+}
+
+.repeater__wrapper input {
+    width: 100%;
+}
+
+.repeater__wrapper .button-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 5px;
+    min-height: 15px;
+}
+
